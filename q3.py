@@ -4,20 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings("ignore")
-import plotly.plotly as py
-import plotly.offline as pyoff
-import plotly.graph_objs as go
-import keras
-from keras.layers import Dense
-from keras.models import Sequential
-from keras.optimizers import Adam 
-from keras.callbacks import EarlyStopping
-from keras.utils import np_utils
-from keras.layers import LSTM
-from sklearn.model_selection import KFold, cross_val_score, train_test_split
-from keras.layers import Dense, Dropout, Activation, Flatten, LSTM, TimeDistributed, RepeatVector
-from keras.layers.normalization import BatchNormalization
-from keras.callbacks import EarlyStopping, ModelCheckpoint
 from matplotlib import pyplot
 from statsmodels.tsa.stattools import adfuller
 from statsmodels.tsa.arima_model import ARIMA
@@ -33,6 +19,7 @@ daily_store_data = daily_store_data.reset_index()
 daily_turnover_data = daily_store_data.pivot(index='date', columns='store', values='turnover')
 daily_turnover_data = daily_turnover_data.reset_index()
 plt.plot(daily_turnover_data['date'], daily_turnover_data[191], color='blue')
+plt.show()
 plt.plot(daily_turnover_data['date'], daily_turnover_data[1614], color='red')
 plt.plot(daily_turnover_data['date'], daily_turnover_data[1618], color='yellow')
 plt.plot(daily_turnover_data['date'], daily_turnover_data[2350], color='green')
