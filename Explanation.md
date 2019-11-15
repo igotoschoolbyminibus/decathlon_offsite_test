@@ -15,7 +15,7 @@ since from all graphs we can see there is a sharp dropoff on PACF when q = 1 & q
   
 Q5:
   
--> Determine Independent Variables:<br/>
+Determine Independent Variables:<br/>
 	--> ttl_txn_off<br/>
 	--> avg_qty_per_txn_off<br/>
 	--> avg_to_per_qty_off<br/>
@@ -40,13 +40,13 @@ Q5:
 		>> e.g. Total (Online + Office) Figures
 	> Age is not used as independent variable because the information is not complete (only 20% of records with age)
 
--> Preprocessing<br/>
+Preprocessing<br/>
 	--> Remove outliers (Top 5 person)<br/>
 		> Too extreme to affect the k-means clustering result (k-means result is easily affected by outliers)<br/>
 	--> Elbow method to determine k (no of clusters)<br/>
 		> Elbow appears when k=3 and k=7, but the clusters is not clear when k=3, so use k=7 instead (and the clusters are quite clear)<br/>
 
--> Analysis:<br/>
+Analysis:<br/>
 	--> Group 0: Offline buyers who likely to shop during holiday / weekend<br/>
 		> Avg turnover per transaction: $275<br/>
 		> Avg turnover per item: $96<br/>
@@ -105,7 +105,7 @@ Q5:
 		> Total Transaction: 3.59<br/>
 		> Popular categories: Football, Hiking, Surfing, Swimming, Tennis<br/>
 
--> Insights<br/>
+Insights<br/>
 	--> Hiking is popular among all groups<br/>
 	--> For online buyers, some of them also tried offline shopping, maybe its good to see their overall customer journey.<br/>
 	--> Online transactions tends to be either large in quantity or high in single price<br/>
