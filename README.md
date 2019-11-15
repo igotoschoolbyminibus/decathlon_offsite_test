@@ -1,4 +1,7 @@
 # decathlon_offsite_test
+Platform:
+
+Except Q1, Q2-3 and Q5 use spyder as platform to run the script. Before running the script make sure the working directory is correct (contains the files.)
 
 Notes
 
